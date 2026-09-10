@@ -5,6 +5,7 @@ import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/localization/l10n_extension.dart';
 import '../../../../core/widgets/app_breakpoints.dart';
 import '../../../../core/widgets/section_header.dart';
+import '../../../../core/widgets/staggered_reveal.dart';
 
 class WhyUsSection extends StatelessWidget {
   const WhyUsSection({super.key});
@@ -28,15 +29,19 @@ class WhyUsSection extends StatelessWidget {
                 Container(
                   color: AppColors.navySurface,
                   padding: const EdgeInsets.all(24),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Container(width: 40, height: 40, alignment: Alignment.center,
-                        decoration: BoxDecoration(border: Border.all(color: AppColors.gold, width: 1.5)),
-                        child: Text('${i + 1}', style: TextStyle(color: AppColors.gold))),
-                    const SizedBox(height: 16),
-                    Text(items[i].$1, style: AppTextStyles.bodyAr.copyWith(color: AppColors.textPrimary, fontWeight: FontWeight.bold, fontSize: 16)),
-                    const SizedBox(height: 8),
-                    Text(items[i].$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13)),
-                  ]),
+                  child: StaggeredReveal(
+                    children: [
+                      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Container(width: 40, height: 40, alignment: Alignment.center,
+                            decoration: BoxDecoration(border: Border.all(color: AppColors.gold, width: 1.5)),
+                            child: Text('${i + 1}', style: TextStyle(color: AppColors.gold))),
+                        const SizedBox(height: 16),
+                        Text(items[i].$1, style: AppTextStyles.bodyAr.copyWith(color: AppColors.textPrimary, fontWeight: FontWeight.bold, fontSize: 16)),
+                        const SizedBox(height: 8),
+                        Text(items[i].$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13)),
+                      ]),
+                    ],
+                  ),
                 ),
             ],
           );

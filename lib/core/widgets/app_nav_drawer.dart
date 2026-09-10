@@ -29,7 +29,7 @@ class AppNavDrawer extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Text(l10n.appName,
-                  style: AppTextStyles.headlineAr.copyWith(fontSize: 22, color: AppColors.gold)),
+                  style: AppTextStyles.headlineAr.copyWith(fontSize: 30, color: AppColors.gold)),
             ),
             const SizedBox(height: 32),
             for (final item in items)

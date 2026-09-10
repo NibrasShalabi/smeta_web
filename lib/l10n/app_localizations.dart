@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @appName.
   ///
   /// In en, this message translates to:
-  /// **'Alwalid'**
+  /// **'Smeta'**
   String get appName;
 
   /// No description provided for @trustLicense.
@@ -209,13 +209,13 @@ abstract class AppLocalizations {
   /// No description provided for @aboutTitle.
   ///
   /// In en, this message translates to:
-  /// **'Alwalid Contracting'**
+  /// **'Smeta Contracting'**
   String get aboutTitle;
 
   /// No description provided for @aboutParagraph1.
   ///
   /// In en, this message translates to:
-  /// **'Alwalid delivers integrated construction solutions — from villas and towers to equipment rental and sales.'**
+  /// **'Smeta delivers integrated construction solutions — from villas and towers to equipment rental and sales.'**
   String get aboutParagraph1;
 
   /// No description provided for @aboutParagraph2.
@@ -251,7 +251,7 @@ abstract class AppLocalizations {
   /// No description provided for @whyUsTitle.
   ///
   /// In en, this message translates to:
-  /// **'Why Alwalid'**
+  /// **'Why Smeta'**
   String get whyUsTitle;
 
   /// No description provided for @whyUsSubtitle.
@@ -509,7 +509,7 @@ abstract class AppLocalizations {
   /// No description provided for @directorRole.
   ///
   /// In en, this message translates to:
-  /// **'General Manager — Alwalid Contracting'**
+  /// **'General Manager — Smeta Contracting'**
   String get directorRole;
 
   /// No description provided for @directorPhoto.
@@ -647,7 +647,7 @@ abstract class AppLocalizations {
   /// No description provided for @copyrightText.
   ///
   /// In en, this message translates to:
-  /// **'© 2026 Alwalid Contracting Company'**
+  /// **'© 2026 Smeta Contracting Company'**
   String get copyrightText;
 
   /// No description provided for @heroTitle.
@@ -679,6 +679,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Main project photo'**
   String get heroPhotoLabel;
+
+  /// No description provided for @contactHeadline.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'re Here to Help'**
+  String get contactHeadline;
+
+  /// No description provided for @contactSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Whether you\'re looking for a consultation or project management — our team is ready.'**
+  String get contactSubtitle;
 }
 
 class _AppLocalizationsDelegate

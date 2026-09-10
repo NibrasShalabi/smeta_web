@@ -1,10 +1,11 @@
 // features/home/presentation/widgets/services_section.dart
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_images.dart';
+import '../../../../core/widgets/network_image_placeholder.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/localization/l10n_extension.dart';
 import '../../../../core/widgets/app_breakpoints.dart';
 import '../../../../core/widgets/section_header.dart';
+import '../../../../core/widgets/staggered_reveal.dart';
 
 class ServicesSection extends StatelessWidget {
   const ServicesSection({super.key});
@@ -24,13 +25,17 @@ class ServicesSection extends StatelessWidget {
             for (final it in items)
               SizedBox(
                 width: isMobile ? c.maxWidth : c.maxWidth / 3 - 16,
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  AspectRatio(aspectRatio: 1.4, child: NetworkImagePlaceholder(label: it.$3)),
-                  const SizedBox(height: 16),
-                  Text(it.$1, style: AppTextStyles.headlineAr.copyWith(fontSize: 19)),
-                  const SizedBox(height: 8),
-                  Text(it.$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13.5)),
-                ]),
+                child: StaggeredReveal(
+                  children: [
+                    Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      AspectRatio(aspectRatio: 1.4, child: NetworkImagePlaceholder(label: it.$3)),
+                      const SizedBox(height: 16),
+                      Text(it.$1, style: AppTextStyles.headlineAr.copyWith(fontSize: 19)),
+                      const SizedBox(height: 8),
+                      Text(it.$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13.5)),
+                    ]),
+                  ],
+                ),
               ),
           ];
           return isMobile

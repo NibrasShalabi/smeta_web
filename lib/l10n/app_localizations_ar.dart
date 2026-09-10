@@ -36,7 +36,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get navRequestQuote => 'اطلب عرض سعر';
 
   @override
-  String get appName => 'الوليد';
+  String get appName => 'سميطة';
 
   @override
   String get trustLicense => 'ترخيص مقاولات رسمي';
@@ -67,7 +67,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get aboutParagraph1 =>
-      'تأسست شركة الوليد لتقديم حلول إنشائية متكاملة، من تصميم وتنفيذ الفلل والعمائر والأبراج، إلى دعم المشروع بمعدات مؤجرة أو للبيع حسب الحاجة.';
+      'تأسست شركة سميطة لتقديم حلول إنشائية متكاملة، من تصميم وتنفيذ الفلل والعمائر والأبراج، إلى دعم المشروع بمعدات مؤجرة أو للبيع حسب الحاجة.';
 
   @override
   String get aboutParagraph2 =>
@@ -86,7 +86,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get aboutPhotoLabel => 'صورة فريق العمل';
 
   @override
-  String get whyUsTitle => 'لماذا الوليد';
+  String get whyUsTitle => 'لماذا سميطة';
 
   @override
   String get whyUsSubtitle => 'أربع نقاط تفرقنا عن باقي شركات المقاولات.';
@@ -216,7 +216,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get directorName => 'اسم المدير';
 
   @override
-  String get directorRole => 'المدير العام — شركة الوليد للمقاولات';
+  String get directorRole => 'المدير العام — شركة سميطة للمقاولات';
 
   @override
   String get directorPhoto => 'صورة المدير';
@@ -285,7 +285,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get footerEquipmentHeader => 'المعدات';
 
   @override
-  String get copyrightText => '© 2026 شركة الوليد للمقاولات';
+  String get copyrightText => '© 2026 شركة سميطة للمقاولات';
 
   @override
   String get heroTitle => 'نبني ما يدوم\nفلل، عمائر، وأبراج';
@@ -302,4 +302,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get heroPhotoLabel => 'صورة مشروع رئيسية';
+
+  @override
+  String get contactHeadline => 'نحن هنا لمساعدتك';
+
+  @override
+  String get contactSubtitle =>
+      'سواء كنت تبحث عن استشارة أو إدارة مشروع — فريقنا جاهز.';
 }

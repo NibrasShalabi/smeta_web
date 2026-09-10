@@ -1,8 +1,11 @@
+// core/localization/supported_locales.dart
 import 'package:flutter/material.dart';
 
-/// Locales supported by the app - add a key to every lib/l10n/app_<locale>.arb
-/// file for each one, then run `flutter gen-l10n` (or just `flutter run`).
-const List<Locale> supportedLocales = [
-  Locale('en'),
-  Locale('ar'),
-];
+class SupportedLocales {
+  SupportedLocales._();
+
+  static const ar = Locale('ar');
+  static const en = Locale('en');
+
+  static const all = <Locale>[ar, en];
+}

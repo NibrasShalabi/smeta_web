@@ -36,7 +36,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navRequestQuote => 'Request Quote';
 
   @override
-  String get appName => 'Alwalid';
+  String get appName => 'Smeta';
 
   @override
   String get trustLicense => 'Licensed Contractor';
@@ -63,11 +63,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get statsSatisfaction => 'Client Satisfaction';
 
   @override
-  String get aboutTitle => 'Alwalid Contracting';
+  String get aboutTitle => 'Smeta Contracting';
 
   @override
   String get aboutParagraph1 =>
-      'Alwalid delivers integrated construction solutions — from villas and towers to equipment rental and sales.';
+      'Smeta delivers integrated construction solutions — from villas and towers to equipment rental and sales.';
 
   @override
   String get aboutParagraph2 =>
@@ -87,7 +87,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aboutPhotoLabel => 'Team photo';
 
   @override
-  String get whyUsTitle => 'Why Alwalid';
+  String get whyUsTitle => 'Why Smeta';
 
   @override
   String get whyUsSubtitle => 'Four things that set us apart.';
@@ -217,7 +217,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get directorName => 'Director Name';
 
   @override
-  String get directorRole => 'General Manager — Alwalid Contracting';
+  String get directorRole => 'General Manager — Smeta Contracting';
 
   @override
   String get directorPhoto => 'Director photo';
@@ -288,7 +288,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get footerEquipmentHeader => 'Equipment';
 
   @override
-  String get copyrightText => '© 2026 Alwalid Contracting Company';
+  String get copyrightText => '© 2026 Smeta Contracting Company';
 
   @override
   String get heroTitle => 'We Build What Lasts\nVillas, Buildings & Towers';
@@ -305,4 +305,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get heroPhotoLabel => 'Main project photo';
+
+  @override
+  String get contactHeadline => 'We\'re Here to Help';
+
+  @override
+  String get contactSubtitle =>
+      'Whether you\'re looking for a consultation or project management — our team is ready.';
 }

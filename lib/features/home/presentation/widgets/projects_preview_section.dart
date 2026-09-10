@@ -1,6 +1,6 @@
 // features/home/presentation/widgets/projects_preview_section.dart
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_images.dart';
+import '../../../../core/widgets/network_image_placeholder.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/localization/l10n_extension.dart';

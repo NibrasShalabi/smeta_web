@@ -1,6 +1,6 @@
 // features/home/presentation/widgets/map_section.dart
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_images.dart';
+import '../../../../core/widgets/network_image_placeholder.dart';
 import '../../../../core/localization/l10n_extension.dart';
 
 class MapSection extends StatelessWidget {

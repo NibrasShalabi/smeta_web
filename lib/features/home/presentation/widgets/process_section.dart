@@ -5,6 +5,7 @@ import '../../../../core/theme/app_text_styles.dart';
 import '../../../../core/localization/l10n_extension.dart';
 import '../../../../core/widgets/app_breakpoints.dart';
 import '../../../../core/widgets/section_header.dart';
+import '../../../../core/widgets/staggered_reveal.dart';
 
 class ProcessSection extends StatelessWidget {
   const ProcessSection({super.key});
@@ -26,13 +27,17 @@ class ProcessSection extends StatelessWidget {
                 width: isMobile ? c.maxWidth : c.maxWidth / 4 - 24,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Container(width: 11, height: 11, decoration: const BoxDecoration(color: AppColors.gold, shape: BoxShape.circle)),
-                    const SizedBox(height: 20),
-                    Text(s.$1, style: AppTextStyles.bodyAr.copyWith(color: AppColors.textPrimary, fontWeight: FontWeight.bold, fontSize: 16)),
-                    const SizedBox(height: 8),
-                    Text(s.$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13)),
-                  ]),
+                  child: StaggeredReveal(
+                    children: [
+                      Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                        Container(width: 11, height: 11, decoration: const BoxDecoration(color: AppColors.gold, shape: BoxShape.circle)),
+                        const SizedBox(height: 20),
+                        Text(s.$1, style: AppTextStyles.bodyAr.copyWith(color: AppColors.textPrimary, fontWeight: FontWeight.bold, fontSize: 16)),
+                        const SizedBox(height: 8),
+                        Text(s.$2, style: AppTextStyles.bodyAr.copyWith(fontSize: 13)),
+                      ]),
+                    ],
+                  ),
                 ),
               ),
           ];
